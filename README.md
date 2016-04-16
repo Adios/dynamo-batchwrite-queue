@@ -30,6 +30,21 @@ I didn't use `babel`, so it needs at least `node 4.3.2` as there are some ES2015
     // params: see DynamoDB.DocumentClient.batchWrite()
     qdb.push(params)
 
+    // records: array of DocumentDB params to be inserted into dynamodb
+    let buf = [], i = 0
+    records.forEach(v => {
+        i++
+	buf.push(v)
+
+        // batchWrite supports at most 25 once a time.
+	if (buf.length >= 25) {
+            qdb.push(buf)
+	    buf = []
+	    i = 0
+	}
+    })
+    if (buf.length) qdb.push(buf)
+
 ## License
 
 ISC

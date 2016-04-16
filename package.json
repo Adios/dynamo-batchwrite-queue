@@ -1,6 +1,6 @@
 {
   "name": "dynamo-batchwrite-queue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An Async Queue for dispatching DynamoDB batchWrite.",
   "main": "src/queue.js",
   "scripts": {
