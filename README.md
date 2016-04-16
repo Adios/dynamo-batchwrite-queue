@@ -16,7 +16,7 @@ I didn't use `babel`, so it needs at least `node 4.3.2` as there are some ES2015
 
     const queue = require('dynamo-batchwrite-queue')
 
-    // all the same
+    // all the same, defaults to concurrency=2.
     var qdb = queue()
     var qdb = queue(2)
     var qdb = queue(document_client_options, 2)
