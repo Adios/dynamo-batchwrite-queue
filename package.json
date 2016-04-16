@@ -1,0 +1,32 @@
+{
+  "name": "dynamo-batchwrite-queue",
+  "version": "1.0.0",
+  "description": "An Async Queue for dispatching DynamoDB batchWrite.",
+  "main": "src/queue.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adios/dynamo-batchwrite-queue.git"
+  },
+  "keywords": [
+    "dynamo",
+    "dynamodb",
+    "batchwrite",
+    "queue"
+  ],
+  "author": "Adios Tsai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adios/dynamo-batchwrite-queue/issues"
+  },
+  "homepage": "https://github.com/Adios/dynamo-batchwrite-queue#readme",
+  "dependencies": {
+    "async": "^2.0.0-rc.3",
+    "aws-sdk": "^2.3.3"
+  },
+  "engines": {
+    "node": ">=4.3.2"
+  }
+}
